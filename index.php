@@ -56,7 +56,7 @@ if ($client->getAccessToken()) {
         'playlistId' => $uploadsListId,
         'maxResults' => 50
       ));
-      $htmlBody .= "<h3>Videos en $uploadsListId</h3><ul>";
+      $htmlBody .= "<h3>Videos Subidos</h3><ul>";
       foreach ($playlistItemsResponse['items'] as $playlistItem) {
         $htmlBody .= sprintf('<li>%s (%s)</li>', $playlistItem['snippet']['title'],
           $playlistItem['snippet']['resourceId']['videoId']);
