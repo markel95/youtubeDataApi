@@ -2,8 +2,8 @@
 
 // Call set_include_path() as needed to point to your client library.
 require_once __DIR__ . '/vendor/autoload.php';
-session_start();
 
+session_start();
 /*
  * You can acquire an OAuth 2.0 client ID and client secret from the
  * Google Developers Console <https://console.developers.google.com/>
@@ -14,7 +14,7 @@ session_start();
 
 $client = new Google_Client();
 $client->setClientId("613558108913-9hos7ugr12dnj3cjpegpgonm341c1dc6.apps.googleusercontent.com");
-$client->setClientSecret("1kus9SQ7nCHFjOxZncm2l6Lw");
+$client->setClientSecret("FnTaI8TwpNGVpWTKn58FPDjV");
 $client->setScopes('https://www.googleapis.com/auth/youtube');
 $redirect = "https://youtube-markel-markel95.c9users.io/index.php";
 $client->setRedirectUri($redirect);
